@@ -9,8 +9,15 @@
 	</head>
 	<body class="container py-5">
 		<form id="rating-form">
-			<input class="rating-form-input" id="title" type="text"/>
-			<input class="rating-form-input" id="rating" type="number" min="0" max="10"/>
+
+			<label>Movie Title</label>
+			<input class="rating-form-input" id="title" type="text" placeholder="Enter Movie Title"/>
+			<small class="text-danger" id="title-check">Title must be at least 2 characters long</small>
+			
+			<label>Rate Between 0-10</label>
+			<input class="rating-form-input" id="rating" type="number" min="0" max="10" placeholder="0-10..."/>
+			<small class="text-danger" id="rating-check">Rating must be between 0-10</small>
+			
 			<button id="submit-rating" class="btn btn-primary">Rate!</button>
 		</form>
 		<section id="all-titles">
